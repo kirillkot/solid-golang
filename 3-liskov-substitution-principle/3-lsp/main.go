@@ -1,5 +1,4 @@
-// An example that does not respect the Liskov substitution principle
-// 3 - correct version
+// We do not change the function of the parent
 // go run main.go square.go
 
 package main
@@ -50,8 +49,8 @@ func AreaOfTheFigure(figure FigureInterface, height, width rune) rune {
 
 func main() {
 	rect := &Rectangle{}
-	square := &Square{}
+	square := &Square{height: 2, width: 3}
 
-	fmt.Println(AreaOfTheFigure(square, 10, 5))
+	fmt.Println(AreaOfTheFigure(square, square.height, square.width))
 	fmt.Println(AreaOfTheFigure(rect, 10, 5))
 }
