@@ -1,3 +1,5 @@
+// Example
+
 package main
 
 // Square ...

@@ -1,3 +1,4 @@
+// Example
 // We do not change the function of the parent
 // go run main.go square.go
 
