@@ -1,3 +1,4 @@
+// go run main.go
 // Stupid example for realize principle of Single responsibility
 // bad part
 package main
